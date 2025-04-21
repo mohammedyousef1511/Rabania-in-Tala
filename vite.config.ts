@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './', // ✅ السطر المهم لحل مشكلة الصفحة الفاضية على Vercel
   plugins: [react()],
   resolve: {
     alias: {
